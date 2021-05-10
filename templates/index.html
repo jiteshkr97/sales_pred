@@ -1,0 +1,25 @@
+<html >
+
+<body>
+ <div>
+	<h1>Predict Sales Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action='/predict' method="post">
+    	<input type="text" name="Store" placeholder="Store" required="required" />
+        <input type="text" name="Dept" placeholder="Test Score" required="required" />
+		<input type="text" name="IsHoliday" placeholder="IsHoliday" required="required" />
+        <input type="text" name="Size" placeholder="Size" required="required" />
+        
+        <button type="submit">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
